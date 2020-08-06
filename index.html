@@ -14,7 +14,7 @@
     <title>Thinker</title>
 </head>
 
-<body>
+<body class="bg-info">
 <div class="container">
 
     <div class="row text-center bg-transparent align-items-center justify-content-center rounded shadow-lg p-2 m-0 mb-1">
@@ -24,6 +24,10 @@
             </a>
             <a target="_blank" href="http://www.google.com" title="Google">
                 <button class="btn fa fa-google fa-2x"></button>
+            </a>
+
+            <a target="_blank" href="http://www.baidu.com" title="Youtube">
+                <button class="btn fa fa-paw fa-2x"></button>
             </a>
 
             <a target="_blank" href="http://en.wikipedia.org/wiki/Main_Page" title="Wikipedia">
@@ -43,41 +47,12 @@
                 <button class="btn fa fa-wechat fa-2x"></button>
             </a>
 
-            <a target="_blank" href="http://www.youtube.com" title="Youtube">
-                <button class="btn fa fa-youtube-play fa-2x"></button>
-            </a>
-
         </div>
 
-        <div class="col-2">
-            <div class="dropdown">
-                <button class="btn dropdown-toggle" data-toggle="dropdown">
-                    Journals
-                </button>
-                <div class="dropdown-menu bg-info">
-                    <a class="dropdown-item" target="_blank" href="http://arxiv.org">arXiv</a>
-                    <a class="dropdown-item" target="_blank" href="http://journals.aps.org">APS</a>
-                    <a class="dropdown-item" target="_blank" href="http://journals.aps.org/prl">PRL</a>
-                    <a class="dropdown-item" target="_blank" href="http://journals.aps.org/prd">PRD</a>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="col-2">
-            <div class="dropdown">
-                <button class="btn dropdown-toggle" data-toggle="dropdown">
-                    Others
-                </button>
-                <div class="dropdown-menu bg-info">
-                    <a class="dropdown-item" target="_blank" href="http://gen.lib.rus.ec">Library Genesis</a></td>
-                    <a class="dropdown-item" target="_blank" href="http://sci-hub.tw">SCI-HUB</a></td>
-                    <a class="dropdown-item" target="_blank" href="http://adsabs.harvard.edu/">ADS</a>
-                    <a class="dropdown-item" target="_blank"  href="physicists.html">Physicists</a>
-                    <a class="dropdown-item" target="_blank" href="conferences.html">Conferences</a>
-                </div>
-
-            </div>
+        <div class="col">
+            <button class="btn fa fa-coffee fa-2x" title="Conference" data-toggle="modal" data-target="#conf" ></button>
+            <button class="btn fa fa-database fa-2x" title="Journals" data-toggle="modal" data-target="#jour" ></button>
+            <button class="btn fa fa-navicon fa-2x" title="Ohters" data-toggle="modal" data-target="#others" ></button>
         </div>
 
     </div>
@@ -139,5 +114,83 @@
     </div>
 
 </div>
+
+<div class="modal fade" id="conf">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-info">
+            <div class="modal-header">
+                <div class="modal-title"> Conference </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"> <a target="_blank" href="https://www.stringwiki.org/wiki/Conferences">Wiki</a> </div>
+                        <div class="col"> <a target="_blank" href="http://www.strings2017.org/past-future-strings/">Strings</a> </div>
+                        <div class="col"> <a target="_blank" href="https://member.ipmu.jp/yuji.tachikawa/stringsmirrors/statistics.html">Statistics</a> </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"> <a target="_blank" href="http://www.damtp.cam.ac.uk/events/strings02/participants.html">Strings 2002</a> </div>
+                        <div class="col"> <a target="_blank" href="https://www.yukawa.kyoto-u.ac.jp/assets/contents/seminar/archive/2003/str2003/">Strings 2003</a> </div>
+                        <div class="col"> <a target="_blank" href="https://www.fields.utoronto.ca/programs/scientific/04-05/string-theory/strings2005/">Strings 2005</a> </div>
+                        <div class="col"> <a target="_blank" href="http://strings2009.roma2.infn.it/home.html">Strings 2009</a> </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"> <a target="_blank" href="http://www2.physics.uu.se/external/strings2011/">Strings 2011</a> </div>
+                        <div class="col"> <a target="_blank" href="http://physics.princeton.edu/strings2014/Participants.shtml">Strings 2014</a> </div>
+                        <div class="col"> <a target="_blank" href="https://strings2015.icts.res.in/">Strings 2015</a> </div>
+                        <div class="col"> <a target="_blank" href="http://www.strings2017.org/">Strings 2017</a> </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col"> <a target="_blank" href="https://indico.oist.jp/indico/event/5/">Strings 2018</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="others">
+    <div class="modal-dialog">
+        <div class="modal-content bg-info">
+            <div class="modal-header">
+                <div class="modal-title"> Others </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"> <a target="_blank" href="http://gen.lib.rus.ec">Library Genesis</a> </div>
+                        <div class="col"> <a target="_blank" href="http://sci-hub.tw">SCI-HUB</a> </div>
+                        <div class="col"> <a target="_blank" href="http://adsabs.harvard.edu/">ADS</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="jour">
+    <div class="modal-dialog">
+        <div class="modal-content bg-info">
+            <div class="modal-header">
+                <div class="modal-title"> Journals </div>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"> <a target="_blank" href="http://arxiv.org">arXiv</a> </div>
+                        <div class="col"> <a target="_blank" href="http://journals.aps.org">APS</a> </div>
+                        <div class="col"> <a target="_blank" href="http://journals.aps.org/prl">PRL</a> </div>
+                        <div class="col"> <a target="_blank" href="http://journals.aps.org/prd">PRD</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

@@ -1,22 +1,9 @@
-
-:root{
-    --main_color: #0489B1;
-    --button_font_color: white;
-}
-
 body, html {
     margin: 0;
     padding: 0;
-    height:100%;
-    background-color:  var( --main_color );
-}
-
-.btn {
-    color: var( --button_font_color );
 }
 
 .btn:focus {
-    outline: none;
     box-shadow: none;
 }
 
