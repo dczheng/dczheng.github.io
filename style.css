@@ -7,6 +7,10 @@ body, html {
     box-shadow: none;
 }
 
+.btn:hover {
+    color: white;
+}
+
 a {
     text-decoration:none;
 }
